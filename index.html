@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Radio en Vivo</title>
+  <meta charset="UTF-8" />
+  <title>Mi Radio Online</title>
   <style>
     body {
+      font-family: sans-serif;
       background: #111;
       color: white;
-      font-family: sans-serif;
       text-align: center;
       padding-top: 50px;
-    }
-    iframe {
-      border: none;
-      width: 300px;
-      height: 200px;
     }
   </style>
 </head>
 <body>
-  <h1>🎙️ Mi Radio Online</h1>
-  <p>Escuchanos en vivo</p>
+  <h1>🎙️ Mi Radio en Vivo</h1>
+  <p>Transmitiendo en directo:</p>
 
-  <!-- Reproductor externo Muses Player -->
-  <iframe 
-    src="https://muses.org/embeddable-player?url=http://s6.myradiostream.com:50044/&autoplay=true&color=111111&title=Mi%20Radio" 
-    allow="autoplay">
-  </iframe>
+  <!-- Aquí va el reproductor de Muses -->
+  <script src="https://hosted.muses.org/mrp.js"></script>
+  <script>
+    MRP.insert({
+      url: 'http://s6.myradiostream.com:50044/',
+      codec: 'mp3',
+      volume: 75,
+      autoplay: false,
+      buffering: 5,
+      title: 'Mi Radio AR',
+      bgcolor: '#111111',
+      skin: 'radiovoz',  // o cualquier skin que elijas
+      width: 220,
+      height: 69
+    });
+  </script>
 
-  <p>Podés pausar o cambiar el volumen desde el reproductor.</p>
+  <p>Pulsa reproducir para escuchar. Pausa y volumen disponibles.</p>
 </body>
 </html>
