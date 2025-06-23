@@ -5,27 +5,25 @@
   <title>Mi Radio Online</title>
   <style>
     body {
-      font-family: sans-serif;
       background-color: #111;
       color: #fff;
+      font-family: sans-serif;
       text-align: center;
       padding: 50px;
     }
-    audio {
+    iframe {
+      border: none;
       width: 100%;
       max-width: 400px;
-      margin-top: 30px;
+      height: 120px;
     }
   </style>
 </head>
 <body>
   <h1>🎙️ Mi Radio Online</h1>
-  <p>Transmitiendo en vivo las 24 horas</p>
+  <p>Transmitiendo en vivo</p>
 
-  <audio controls autoplay>
-    <source src="http://s6.myradiostream.com:50044/" type="audio/mpeg">
-    Tu navegador no soporta el elemento de audio.
-  </audio>
+  <iframe src="https://www.myradiostream.com/embed/50044" allow="autoplay"></iframe>
 
   <p>Podés pausar y reanudar la transmisión en cualquier momento.</p>
 </body>
