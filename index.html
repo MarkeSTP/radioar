@@ -5,28 +5,29 @@
   <title>Mi Radio en Vivo</title>
   <style>
     body {
-      font-family: sans-serif;
       background: #111;
-      color: #fff;
+      color: white;
+      font-family: sans-serif;
       text-align: center;
-      padding: 50px;
+      padding-top: 50px;
     }
-    audio {
-      width: 100%;
-      max-width: 400px;
-      margin-top: 20px;
+    iframe {
+      border: none;
+      width: 300px;
+      height: 200px;
     }
   </style>
 </head>
 <body>
-  <h1>🎙️ Mi Radio en Vivo</h1>
-  <p>Transmitiendo las 24 horas</p>
+  <h1>🎙️ Mi Radio Online</h1>
+  <p>Escuchanos en vivo</p>
 
-  <audio controls preload="none">
-    <source src="http://s6.myradiostream.com:50044/" type="audio/mpeg">
-    Tu navegador no soporta el elemento audio.
-  </audio>
+  <!-- Reproductor externo Muses Player -->
+  <iframe 
+    src="https://muses.org/embeddable-player?url=http://s6.myradiostream.com:50044/&autoplay=true&color=111111&title=Mi%20Radio" 
+    allow="autoplay">
+  </iframe>
 
-  <p>Pulsa “play” para escuchar la radio, pausa cuando quieras.</p>
+  <p>Podés pausar o cambiar el volumen desde el reproductor.</p>
 </body>
 </html>
