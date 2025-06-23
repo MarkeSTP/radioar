@@ -2,29 +2,32 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Radio Online</title>
+  <title>Mi Radio en Vivo</title>
   <style>
     body {
+      font-family: sans-serif;
       background-color: #111;
       color: #fff;
-      font-family: sans-serif;
       text-align: center;
       padding: 50px;
     }
+
     iframe {
       border: none;
       width: 100%;
       max-width: 400px;
-      height: 120px;
+      height: 150px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>🎙️ Mi Radio Online</h1>
-  <p>Transmitiendo en vivo</p>
+  <h1>🎙️ Mi Radio en Vivo</h1>
+  <p>Transmitiendo las 24 horas</p>
 
-  <iframe src="https://www.myradiostream.com/embed/50044" allow="autoplay"></iframe>
+  <!-- Reproductor embebido -->
+  <iframe src="https://www.myradiostream.com/embed/player.php?port=50044&name=MiRadio" allow="autoplay"></iframe>
 
-  <p>Podés pausar y reanudar la transmisión en cualquier momento.</p>
+  <p>Usá los botones para pausar o reanudar la transmisión.</p>
 </body>
 </html>
